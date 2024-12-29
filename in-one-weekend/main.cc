@@ -47,7 +47,7 @@ int main() {
     // Note that this is an ideal ratio, not the actual one that will be used,
     // since we're working with integers
     const auto aspect_ratio = 16.0 / 9.0;
-    const int image_width = 800;
+    const int image_width = 1200;
 
     // Calculate the image height, and ensure that it's at least 1
     int image_height = int(image_width / aspect_ratio);
