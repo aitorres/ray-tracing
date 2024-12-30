@@ -3,10 +3,13 @@
 
 #include "rtweekend.h"
 
+class material;
+
 class hit_record {
     public:
-        point3 p;
-        vec3 normal;
+        point3 p; // point where the hit occurred
+        vec3 normal; // vector normal to the point where the hit occurred (p)
+        shared_ptr<material> mat; // material of the surface that hit
         double t;
         bool front_face;
 
